@@ -18,5 +18,8 @@ Options:
 ```
 参数说明：
 -h	帮助信息
+
 -r	要搜索的镜像名称	例如：armv7/armhf-ubuntu 、 ubuntu 等
+
 -t	要搜索的镜像标签	例如：amd64、arm64 等
+
