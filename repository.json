@@ -1,0 +1,187 @@
+{
+  "count": 1115,
+  "next": "https://search-api.s.us-east-1.aws.dckr.io/v2/search/repositories/?page=2\u0026page_size=20\u0026query=istio",
+  "previous": "",
+  "results": [
+    {
+      "repo_name": "istio/proxy_debug",
+      "short_description": "",
+      "star_count": 4,
+      "pull_count": 39166769,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/mixer",
+      "short_description": "",
+      "star_count": 3,
+      "pull_count": 11461541,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/proxy",
+      "short_description": "",
+      "star_count": 1,
+      "pull_count": 9022254,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/istio-ca",
+      "short_description": "",
+      "star_count": 1,
+      "pull_count": 1182188,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/pilot",
+      "short_description": "",
+      "star_count": 6,
+      "pull_count": 9948633,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/grafana",
+      "short_description": "",
+      "star_count": 3,
+      "pull_count": 1610673,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/init",
+      "short_description": "",
+      "star_count": 0,
+      "pull_count": 3279846,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/proxy_init",
+      "short_description": "",
+      "star_count": 3,
+      "pull_count": 562887,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/fortio",
+      "short_description": "Fortio load testing library and tool in go. Allows a set qps load and records latency histograms.",
+      "star_count": 0,
+      "pull_count": 254031,
+      "repo_owner": "",
+      "is_automated": true,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/servicegraph",
+      "short_description": "",
+      "star_count": 2,
+      "pull_count": 333427,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/sidecar_injector",
+      "short_description": "",
+      "star_count": 1,
+      "pull_count": 362583,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istionightly/base_debug",
+      "short_description": "",
+      "star_count": 0,
+      "pull_count": 115102,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/proxyv2",
+      "short_description": "",
+      "star_count": 2,
+      "pull_count": 306166,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/ci",
+      "short_description": "",
+      "star_count": 0,
+      "pull_count": 170714,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/citadel",
+      "short_description": "",
+      "star_count": 1,
+      "pull_count": 171668,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/examples-bookinfo-productpage-v1",
+      "short_description": "",
+      "star_count": 0,
+      "pull_count": 220539,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/examples-bookinfo-reviews-v1",
+      "short_description": "",
+      "star_count": 0,
+      "pull_count": 219734,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/examples-bookinfo-details-v1",
+      "short_description": "",
+      "star_count": 0,
+      "pull_count": 234636,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istionightly/proxyv2",
+      "short_description": "",
+      "star_count": 0,
+      "pull_count": 24765,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    },
+    {
+      "repo_name": "istio/examples-bookinfo-reviews-v2",
+      "short_description": "",
+      "star_count": 0,
+      "pull_count": 213804,
+      "repo_owner": "",
+      "is_automated": false,
+      "is_official": false
+    }
+  ]
+}
