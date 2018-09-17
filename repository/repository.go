@@ -6,6 +6,8 @@ import (
 	"net/http"
 	"strings"
 	"dockersearch/tags"
+	"fmt"
+	"os"
 )
 
 type Repository struct {
@@ -27,10 +29,17 @@ type Result struct {
 
 func GetRepository(url string, queryRepository string, queryTag string) {
 	resp, err := http.Get(url)
+	if err != nil {
+		fmt.Println("网络错误")
+		//panic(err)
+		os.Exit(1)
+	}
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		panic(err)
+		fmt.Println("网络错误")
+		//panic(err)
+		os.Exit(1)
 	}
 	repositoryResult := Repository{}
 	json.Unmarshal([]byte(body), &repositoryResult)
