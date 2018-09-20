@@ -15,7 +15,7 @@ var (
 
 func init() {
 	flag.BoolVar(&h, "h", false, "this `help`")
-	flag.StringVar(&r, "r", "", "Input your `queryRepository` example: armv7/armhf-ubuntu or ubuntu")
+	flag.StringVar(&r, "r", "", "Input your `queryRepository` example: armv7/armhf-ubuntu or ubuntu,arm")
 	flag.StringVar(&t, "t", "", "Input your `queryTag` example: amd or arm and so on")
 	// 改变默认的 Usage
 	flag.Usage = usage
@@ -27,7 +27,7 @@ func main() {
 		flag.Usage()
 		os.Exit(1)
 	}
-	if r == "" || t == "" {
+	if r == ""  {
 		flag.Usage()
 		os.Exit(1)
 	}
@@ -41,7 +41,7 @@ func main() {
 }
 
 func usage() {
-	fmt.Fprintf(os.Stderr, `dockersearch version: 0.0.1
+	fmt.Fprintf(os.Stderr, `dockersearch version: 0.0.2
 Usage: dockersearch [-hrt] 
 
 Options:

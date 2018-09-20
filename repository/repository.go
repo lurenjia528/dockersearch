@@ -11,9 +11,9 @@ import (
 )
 
 type Repository struct {
-	Count    int                `json:"count"`
-	Next     string             `json:"next"`
-	Previous string             `json:"previous"`
+	Count    int      `json:"count"`
+	Next     string   `json:"next"`
+	Previous string   `json:"previous"`
 	Results  []Result `json:"results"`
 }
 
@@ -44,12 +44,24 @@ func GetRepository(url string, queryRepository string, queryTag string) {
 	repositoryResult := Repository{}
 	json.Unmarshal([]byte(body), &repositoryResult)
 
+	repositoryKeyWord := strings.Split(queryRepository, ",")
+	length := len(repositoryKeyWord)
 	result := repositoryResult.Results
 	for i := 0; i < len(result); i++ {
 		repoName := result[i].RepoName
-		if strings.Contains(repoName, queryRepository) {
-			tagOriginUrl := "https://hub.docker.com/v2/repositories/" + repoName + "/tags/?page=1&page_size=250"
-			tags.GetTag(tagOriginUrl, repoName, queryTag)
+		for i, keyWord := range repositoryKeyWord {
+			if strings.Contains(repoName, keyWord) {
+				if i == length-1 {
+					if queryTag == "" {
+						fmt.Println("详情：" + "https://hub.docker.com/r/" + repoName)
+					} else {
+						tagOriginUrl := "https://hub.docker.com/v2/repositories/" + repoName + "/tags/?page=1&page_size=250"
+						tags.GetTag(tagOriginUrl, repoName, queryTag)
+					}
+				}
+			} else {
+				break
+			}
 		}
 	}
 
