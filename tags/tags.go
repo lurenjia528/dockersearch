@@ -57,9 +57,10 @@ func GetTag(url string, repoName string, archTag string) {
 		tagName := result[i].Name
 		if strings.Contains(tagName, archTag) {
 			repositoryAndTag := repoName + ":" + tagName
-			fmt.Println(repositoryAndTag)
+//			fmt.Println(repositoryAndTag)
 			fmt.Println("详情：" + "https://hub.docker.com/r/" + repoName + "/tags/")
 			fmt.Println("下载：" + "docker pull " + repositoryAndTag)
+			fmt.Println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 			continue
 		} else {
 			images := result[i].Images
@@ -68,9 +69,10 @@ func GetTag(url string, repoName string, archTag string) {
 				arch := images[j].Architecture
 				if strings.Contains(arch, archTag) {
 					repositoryAndTag := repoName + ":" + tagName
-					fmt.Println(repositoryAndTag)
+//					fmt.Println(repositoryAndTag)
 					fmt.Println("详情：" + "https://hub.docker.com/r/" + repoName + "/tags/")
 					fmt.Println("下载：" + "docker pull " + repositoryAndTag)
+					fmt.Println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 				}
 			}
 		}
