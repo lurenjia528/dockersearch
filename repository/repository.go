@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
-	"dockersearch/tags"
+	"github.com/lurenjia528/dockersearch/tags"
 	"fmt"
 	"os"
 )

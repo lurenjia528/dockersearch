@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"flag"
 	"os"
-	"dockersearch/repository"
+	"github.com/lurenjia528/dockersearch/repository"
 )
 
 var (
